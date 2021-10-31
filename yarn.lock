@@ -1098,7 +1098,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.16.0", "@babel/runtime@^7.9.2":
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.0.tgz#e27b977f2e2088ba24748bf99b5e1dece64e4f0b"
   integrity sha512-Nht8L0O8YCktmsDV6FqFue7vQLRx3Hb0B37lS5y0jDRqRxlBG4wIJHnf9/bgSE2UyipKFA01YtS+npRdTWBUyw==
@@ -2288,6 +2288,19 @@ ansi-styles@^5.0.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-5.2.0.tgz#07449690ad45777d1924ac2abb2fc8895dba836b"
   integrity sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==
+
+antlr4-autosuggest@^0.0.28:
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/antlr4-autosuggest/-/antlr4-autosuggest-0.0.28.tgz#1010bf9f675b6abd4b7876442a8a7c07a16939f8"
+  integrity sha512-nwbi1dXjt9tb7rPHqMcrhcdVmEmeND0qppv3DTVeUd5F0BVJLQrSJEI60zrPrzrjNEwBObeSgxN7LdHQUsiu5g==
+  dependencies:
+    antlr4 "^4.7.0"
+    debug "^3.1.0"
+
+antlr4@^4.7.0, antlr4@^4.9.2:
+  version "4.9.2"
+  resolved "https://registry.yarnpkg.com/antlr4/-/antlr4-4.9.2.tgz#abbc53d275954b1b6f4d8b3468b4a2cb258121fc"
+  integrity sha512-UjMSlenUORL+a+6g4RNZxRh5LcFWybRi2g0ASDBpgXBY6nlavg0BRVAVEQF0dz8jH6SyX3lV7uP5y/krJzc+Hw==
 
 anymatch@^2.0.0:
   version "2.0.0"
@@ -3889,7 +3902,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.1, debug@^3.2.6:
+debug@^3.1.0, debug@^3.1.1, debug@^3.2.6:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
   integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==

@@ -1,0 +1,20 @@
+// {
+//     "root": true,
+//     "extends": ["react-app", "eslint:recommended"],
+//     "rules": {
+//       "sort-imports": ["off"],
+//       "import/order": ["off"],
+//       "react/jsx-uses-react": ["error"],
+//       "react/react-in-jsx-scope": ["error"],
+//       "no-unused-vars": ["warn"],
+//       "@typescript-eslint/no-unused-vars": ["warn"]
+//     },
+//     "overrides": [
+//       {
+//         "files": ["src/**/*.stories.{js,tsx}"],
+//         "rules": {
+//           "import/no-anonymous-default-export": "off"
+//         }
+//       }
+//     ]
+//   }
