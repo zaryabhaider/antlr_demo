@@ -9,17 +9,20 @@ parse
 expression
     : LPAREN expression RPAREN                       #parenExpression
     | left=expression op=operator right=expression   #operatorExpression
+    | left=expression op=comparator right=expression #comparatorExpression
+    | left=expression op=binary right=expression     #binaryExpression
     | IDENTIFIER                                     #identifierExpression
     | DECIMAL                                        #decimalExpression
     ;
 
 operator : '+' | '-' | '*' | '/' | '%' ;
 
-GT         : '>' ;
-GE         : '>=' ;
-LT         : '<' ;
-LE         : '<=' ;
-EQ         : '=' ;
+comparator : '>' | '>=' | '<' | '<=' | '=' ;
+
+binary : AND | OR;
+
+AND        : 'AND' ;
+OR         : 'OR' ;
 LPAREN     : '(' ;
 RPAREN     : ')' ;
 DECIMAL    : '-'? [0-9]+ ( '.' [0-9]+ )? ;

@@ -1,4 +1,4 @@
-// Generated from Documents/lang.g4 by ANTLR 4.9.2
+// Generated from Documents/suggestions.g4 by ANTLR 4.9.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
@@ -71,9 +71,9 @@ const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
 const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
 
-export default class langLexer extends antlr4.Lexer {
+export default class suggestionsLexer extends antlr4.Lexer {
 
-    static grammarFileName = "lang.g4";
+    static grammarFileName = "suggestions.g4";
     static channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
 	static modeNames = [ "DEFAULT_MODE" ];
 	static literalNames = [ null, "'+'", "'-'", "'*'", "'/'", "'%'", "'>'", 
@@ -96,24 +96,24 @@ export default class langLexer extends antlr4.Lexer {
     }
 }
 
-langLexer.EOF = antlr4.Token.EOF;
-langLexer.T__0 = 1;
-langLexer.T__1 = 2;
-langLexer.T__2 = 3;
-langLexer.T__3 = 4;
-langLexer.T__4 = 5;
-langLexer.T__5 = 6;
-langLexer.T__6 = 7;
-langLexer.T__7 = 8;
-langLexer.T__8 = 9;
-langLexer.T__9 = 10;
-langLexer.AND = 11;
-langLexer.OR = 12;
-langLexer.LPAREN = 13;
-langLexer.RPAREN = 14;
-langLexer.DECIMAL = 15;
-langLexer.IDENTIFIER = 16;
-langLexer.WS = 17;
+suggestionsLexer.EOF = antlr4.Token.EOF;
+suggestionsLexer.T__0 = 1;
+suggestionsLexer.T__1 = 2;
+suggestionsLexer.T__2 = 3;
+suggestionsLexer.T__3 = 4;
+suggestionsLexer.T__4 = 5;
+suggestionsLexer.T__5 = 6;
+suggestionsLexer.T__6 = 7;
+suggestionsLexer.T__7 = 8;
+suggestionsLexer.T__8 = 9;
+suggestionsLexer.T__9 = 10;
+suggestionsLexer.AND = 11;
+suggestionsLexer.OR = 12;
+suggestionsLexer.LPAREN = 13;
+suggestionsLexer.RPAREN = 14;
+suggestionsLexer.DECIMAL = 15;
+suggestionsLexer.IDENTIFIER = 16;
+suggestionsLexer.WS = 17;
 
 
 

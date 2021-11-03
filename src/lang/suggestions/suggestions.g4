@@ -1,6 +1,4 @@
-grammar lang;
-
-program: expression*;
+grammar suggestions;
 
 parse
     : expression EOF
@@ -8,36 +6,18 @@ parse
 
 expression
     : LPAREN expression RPAREN                       #parenExpression
-    | NOT expression                                 #notExpression
-    | left=expression op=comparator right=expression #comparatorExpression
+    | left=expression op=operator right=expression   #operatorExpression
     | left=expression op=binary right=expression     #binaryExpression
-    | bool                                           #boolExpression
     | IDENTIFIER                                     #identifierExpression
     | DECIMAL                                        #decimalExpression
     ;
 
-comparator
-    : GT | GE | LT | LE | EQ
-    ;
+operator : '+' | '-' | '*' | '/' | '%' | '>' | '>=' | '<' | '<=' | '=';
 
-binary
-    : AND | OR
-    ;
-
-bool
-    : TRUE | FALSE
-    ;
+binary : AND | OR;
 
 AND        : 'AND' ;
 OR         : 'OR' ;
-NOT        : 'NOT';
-TRUE       : 'TRUE' ;
-FALSE      : 'FALSE' ;
-GT         : '>' ;
-GE         : '>=' ;
-LT         : '<' ;
-LE         : '<=' ;
-EQ         : '=' ;
 LPAREN     : '(' ;
 RPAREN     : ')' ;
 DECIMAL    : '-'? [0-9]+ ( '.' [0-9]+ )? ;

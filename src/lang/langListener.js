@@ -23,6 +23,15 @@ export default class langListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by langParser#binaryExpression.
+	enterBinaryExpression(ctx) {
+	}
+
+	// Exit a parse tree produced by langParser#binaryExpression.
+	exitBinaryExpression(ctx) {
+	}
+
+
 	// Enter a parse tree produced by langParser#decimalExpression.
 	enterDecimalExpression(ctx) {
 	}
@@ -59,12 +68,39 @@ export default class langListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by langParser#comparatorExpression.
+	enterComparatorExpression(ctx) {
+	}
+
+	// Exit a parse tree produced by langParser#comparatorExpression.
+	exitComparatorExpression(ctx) {
+	}
+
+
 	// Enter a parse tree produced by langParser#operator.
 	enterOperator(ctx) {
 	}
 
 	// Exit a parse tree produced by langParser#operator.
 	exitOperator(ctx) {
+	}
+
+
+	// Enter a parse tree produced by langParser#comparator.
+	enterComparator(ctx) {
+	}
+
+	// Exit a parse tree produced by langParser#comparator.
+	exitComparator(ctx) {
+	}
+
+
+	// Enter a parse tree produced by langParser#binary.
+	enterBinary(ctx) {
+	}
+
+	// Exit a parse tree produced by langParser#binary.
+	exitBinary(ctx) {
 	}
 
 
