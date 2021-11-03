@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { tokenize } from "./lang";
-// import Lexer from "./lang/langLexer.js";
-// import Parser from "./lang/langParser.js";
 import Lexer from "./lang/suggestions/suggestionsLexer.js";
 import Parser from "./lang/suggestions/suggestionsParser.js";
-import {concat, find, findIndex} from "lodash"
 import autoSuggest from "antlr4-autosuggest";
 
 const variables = [
